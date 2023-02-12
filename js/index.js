@@ -8,5 +8,11 @@ document.getElementById("log-btn").addEventListener("click", function () {
   //   Step:3 Get Password Input Inside Input Field
   const PasswordField = document.getElementById("password-id");
   const password = PasswordField.value;
-  console.log(emailField, password);
+
+  // Optional Not Use
+  if (emailField == "masud@gmail.com" && password == "masud") {
+    window.location.href = "bank.html";
+  } else {
+    alert("You're a thief , Beat with bamboo");
+  }
 });
