@@ -17,17 +17,18 @@
           <!-- deposit  -->
           <div class="bg-gray-700 text-white font-bold py-16 px-8 rounded-md space-y-4">
             <h1 class="text-4xl">Deposit</h1>
-            <p class="text-6xl">$00</p>
+            <p class="text-6xl">$<span id="dip-amount">00</span></p>
           </div>
           <!-- withdraw -->
           <div class="bg-yellow-500 text-white font-bold py-16 px-8 rounded-md space-y-4">
             <h1 class="text-4xl">Withdraw</h1>
-            <p class="text-6xl">$00</p>
+            <p class="text-6xl">$<span id="wit-amount">00</span></p>
           </div>
+
           <!-- Balance  -->
           <div class="bg-pink-500 text-white font-bold py-16 px-8 rounded-md space-y-4">
             <h1 class="text-4xl">Balance</h1>
-            <p class="text-6xl">$1250</p>
+            <p class="text-6xl">$<span id="bal-amount">1250</span></p>
           </div>
         </div>
 
@@ -37,22 +38,20 @@
           <div class="bg-violet-500 font-bold py-16 px-8 rounded-md space-y-4 w-1/2">
             <h1 class="text-4xl text-gray-900 mb-4">Please Deposit</h1>
 
-            <input class="w-9/12 font-medium outline-2 outline-slate-400 outline-dotted py-2 px-2 rounded-lg" type="text" placeholder="$ Amount You Want to Deposit" /> <br />
+            <input class="w-9/12 font-medium outline-2 outline-slate-400 outline-dotted py-2 px-2 rounded-lg" type="text" placeholder="$ Amount You Want to Deposit" id="dep-input" /> <br />
             <button id="dep-btn" class="mt-3 text-2xl bg-gray-300 px-6 py-4 rounded-lg font-bold hover:bg-gray-400">Deposit</button>
           </div>
           <!-- withdraw -->
           <div class="bg-orange-500 font-bold py-16 px-8 rounded-md space-y-4 w-1/2">
             <h1 class="text-4xl text-gray-900 mb-4">Please Withdraw</h1>
 
-            <input class="w-9/12 font-medium outline-2 outline-slate-400 outline-dotted py-2 px-2 rounded-lg" type="text" placeholder="$ Amount You Want to withdraw" /> <br />
-            <button id="dep-btn" class="mt-3 text-2xl bg-gray-300 px-6 py-4 rounded-lg font-bold hover:bg-gray-400">Withdraw</button>
+            <input class="w-9/12 font-medium outline-2 outline-slate-400 outline-dotted py-2 px-2 rounded-lg" type="text" placeholder="$ Amount You Want to withdraw" id="wit-input" /> <br />
+            <button id="wit-btn" class="mt-3 text-2xl bg-gray-300 px-6 py-4 rounded-lg font-bold hover:bg-gray-400">Withdraw</button>
           </div>
         </div>
       </section>
     </main>
 
-
-    
-    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/deposit.js"></script>
   </body>
 </html>
